@@ -8,6 +8,11 @@
 
 // Start coding here
 
+function sumNegativeNumbers(numbers) {
+    let negative = numbers.filter(num => num<0)
+    return negative.reduce((num1,num2) => num1+num2)
+}
+
 const numbers1 = [3, -5, 10, 12, -7, 0, 8, 2];
 console.log(sumNegativeNumbers(numbers1)); // -12
 
